@@ -1,0 +1,386 @@
+.book-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-title {
+    text-align: center;
+    color: #003366;
+    font-size: 24px;
+  }
+  
+  .book-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .book-form input, 
+  .book-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+  }
+  
+  .book-form button {
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .book-form button:hover {
+    background-color: #00509e;
+  }
+  /* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: calc(100% - 60px);
+    border-radius: 0 15px 15px 0;
+    z-index: 1;
+  }
+  
+  .sidebar-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar-links {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .sidebar-links li {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .sidebar-links li a {
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .sidebar-links li a:hover {
+    color: #ffcc00;
+    background-color: #0055aa;
+    padding-left: 20px;
+  }
+  
+  .sidebar-links li a svg {
+    margin-right: 15px;
+    font-size: 1.5rem;
+  }
+/* Footer Section */
+.footer {
+    background-color: #003366; /* اللون الخلفي للتذييل */
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0; /* لتحديد الموقع من اليسار */
+    width: 100%;  /* لكي يمتد footer عبر العرض الكامل */
+    z-index: 0; /* لضمان أنه يظهر فوق العناصر الأخرى */
+  }
+  
+  .footer a {
+    color: white;
+    font-size: 1.8rem;
+    transition: color 0.3s, transform 0.2s;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+  }
+  /* consulation.js*/
+  .contact-us-modern {
+    background: #f2f8ff;
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 650px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .contact-us-modern h1 {
+    font-size: 30px;
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  
+  .contact-us-modern p {
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+  
+  .contact-form-modern {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .input-group {
+    position: relative;
+  }
+  
+  .input-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #003366;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-group input:focus,
+  .input-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .submit-button {
+    background-color: #003366;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #0057b7;
+  }
+  .confirmation-message {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+
+  .profile-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f4f8ff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-title {
+    text-align: center;
+    color: #003366;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-details p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+
+  /* Profile.css */
+.profile-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+
+@media print {
+  .sidebar,
+  .footer,
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  .payment-summary {
+    margin-top: 20px;
+  }
+
+  .payment-summary h2, h4, h5 {
+    text-align: left;
+  }
+}
+
+.print-only {
+  display: none;
+}
+
+
+@media print {
+  .sidebar, .footer, .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
+
+.print-only {
+  display: none;
+}
+
+@media print {
+  body {
+    font-family: 'Arial', sans-serif;
+    background: white;
+    color: black;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+    margin-top: 40px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  table, th, td {
+    border: 1px solid #333;
+  }
+
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    padding: 8px;
+  }
+
+  td {
+    padding: 8px;
+  }
+
+  .text-end {
+    text-align: right;
+    margin-top: 20px;
+  }
+}
+
+
+/*.................................................*/
+
+.profile-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.profile-info-section label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #333;
+}
+
+.profile-info-section input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+
+.save-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: center; 
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+

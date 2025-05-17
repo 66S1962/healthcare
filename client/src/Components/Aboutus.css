@@ -1,0 +1,274 @@
+/* Page Container */
+.aboutus-container {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    color: #3695f3;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 10px;
+    min-height: 100vh;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background-color: #003366;
+    color: rgb(36, 22, 153);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+    overflow-y: overlay;
+  }
+  
+  .sidebar-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #fafbfc; /* أزرق فاتح يتناسب مع تصميم المستشفيات */
+    border-bottom: 4px solid #c6f054; /* زيادة سمك الحافة إلى 4px بلون أخضر يرمز للصحة */
+    padding-bottom: 5px; /* إضافة مسافة صغيرة بين النص والحافة */
+  }
+  
+  
+  
+  .sidebar-links {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .sidebar-links li {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-links li a {
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .sidebar-links li a:hover {
+    color: #ffcc00;
+    background-color: #0055aa;
+    padding-left: 20px;
+  }
+  
+  .sidebar-links li a svg {
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+  
+  /* Header with Search Bar */
+  .header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .search-container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .search-bar {
+    padding: 10px 40px;
+    width: 100%;
+    border-radius: 8px;
+    
+    border: 3px solid #003366;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 10px;
+    top: 35%;
+    
+    transform: translateY(-60%);
+    color: #2b537a;
+  }
+  
+  /* Welcome Text */
+  .welcome-text {
+    font-family: 'Pacifico', 'Courier New', Courier, monospace ; /* يمكنك تغيير هذا الخط إلى ما تحب */
+    font-size: 2rem; /* تغيير الحجم حسب احتياجك */
+    font-weight: bold;
+    color: #35075f;
+    margin-bottom: 20px;
+    text-align: center;
+  
+    /* رفع النص وتحريكه إلى اليمين */
+    position: relative;
+    top: -40px; /* رفع النص إلى الأعلى */
+    right: -10px;
+    left: -200px;
+  }
+  
+  
+  /* Main Content */
+  .content {
+    margin-left: 270px; /* Sidebar width adjustment */
+    width: calc(100% - 270px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Text Section */
+  .text-section {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .quote {
+    font-family: 'Pacifico', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* يمكنك تغيير هذا الخط إلى ما تحب */
+    font-size: 17px; /* تغيير الحجم حسب احتياجك */
+    font-weight: bold;
+    color: #30116d;
+    margin-bottom: -50px;
+    text-align: center;
+
+    /* رفع الاقتباس وتحريكه إلى اليمين */
+    position: relative;
+    top: -50px; /* رفع النص إلى الأعلى */
+    right: -100px;
+    left: -200px;
+    /* تحريك النص إلى اليمين */
+
+    /* تعديل لظهور الاقتباس على سطرين */
+    display: inline-block; /* لجعل النص يحتل سطرين */
+    width: 200px; /* تحديد العرض لجعل النص ينتقل إلى سطرين */
+    word-wrap: break-word; /* السماح بانتقال الكلمات إلى السطر التالي إذا لزم الأمر */
+}
+
+  
+  
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+
+  /* رفع العناصر وتحريكها إلى اليمين */
+  position: relative;
+  top: -1px; /* رفع المحتوى إلى الأعلى */
+  right: -500px; /* تحريك المحتوى إلى اليمين */
+}
+
+.info {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #033c86;
+  transition: opacity 0.5s ease-in-out;
+  max-width: 400px;
+  margin-bottom: 10px;
+
+  /* رفع النص وتحريكه */
+  position: relative;
+  top: -30px; /* رفع النص أكثر */
+  right: -120px; /* تحريكه إلى اليمين أكثر */
+  left: -700px;
+}
+
+.info-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+
+  /* رفع الأزرار وتحريكها */
+  position: relative;
+  top: -30px; /* رفع الأزرار */
+  right: -100px; 
+  left: -700px;/* تحريك الأزرار إلى اليمين */
+}
+
+.arrow-icon {
+  font-size: 2rem;
+  cursor: pointer;
+
+  /* رفع الأسهم وتحريكها */
+  position: relative;
+  top: 1px; /* رفع السهم أكثر */
+  
+  left: 100px; 
+  
+}
+
+.info-buttons button {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.info-buttons button:hover {
+  background-color: #0055aa;
+  transform: scale(1.1);
+}
+
+  /* Image Section */
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 60%;
+    
+  }
+  
+  .image-section img {
+    width: 80%;
+    max-width: 350px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    
+    margin-top: -160px;
+    top: -180px; /* تحريك الصورة للأعلى */
+    right: -200px;
+  }
+  
+  /* Footer Section */
+.footer {
+    background-color: #003366; /* اللون الخلفي للتذييل */
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer a {
+    color: white;
+    font-size: 1.8rem;
+    transition: color 0.3s, transform 0.2s;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+  }
+  
+  

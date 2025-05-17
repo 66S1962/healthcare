@@ -1,0 +1,654 @@
+/* Digital Medicine Page Styles */
+
+.container-fluid {
+    background-color: #f4f8fb; /* Light background for the page */
+    padding: 30px 0;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2a3d66;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px; /* You can adjust this based on your image */
+    object-fit: cover;
+  }
+  
+  .card-body {
+    background-color: #ffffff;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2a3d66;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    font-size: 1rem;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button:active {
+    background-color: #004085;
+  }
+  
+  button.success-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  button.success-btn:hover {
+    background-color: #218838;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .row {
+    margin-top: 20px;
+  }
+  
+  .row .col-md-4 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  button.success-btn {
+    background-color: #28a745;
+    color: white;
+    margin-top: 20px;
+    padding: 15px 25px;
+  }
+  
+  button.success-btn:hover {
+    background-color: #218838;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      margin-bottom: 15px;
+    }
+  
+    .card-img-top {
+      height: 150px;
+    }
+  
+    .card-title {
+      font-size: 1.2rem;
+    }
+  
+    .card-text {
+      font-size: 0.9rem;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  }
+  
+  /* Sidebar Styles (No changes to Sidebar) */
+  .sidebar {
+    width: 250px;
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: calc(100% - 60px);
+    border-radius: 0 15px 15px 0;
+    z-index: 1;
+  }
+  
+  .sidebar-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar-links {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .sidebar-links li {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-links li a {
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .sidebar-links li a:hover {
+    color: #ffcc00;
+    background-color: #0055aa;
+    padding-left: 20px;
+  }
+  
+  .sidebar-links li a svg {
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+  
+  /* Footer Styles (No changes to Footer) */
+  .footer {
+    background-color: #003366;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+  }
+  
+  .footer a {
+    color: white;
+    font-size: 1.8rem;
+    transition: color 0.3s, transform 0.2s;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+  }
+  .pharmcy-container {
+    padding: 40px 60px;
+    background-color: #f4f8fb;
+    min-height: 100vh;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #2a3d66;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .search-input {
+    display: block;
+    margin: 0 auto 40px auto;
+    width: 60%;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .search-input:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+    border-color: #007bff;
+  }
+  
+  .medication-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: fit-content; /* يجعل الشبكة تأخذ فقط حجم الكروت */
+  margin-left: auto; 
+ 
+  }
+  
+  .med-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .med-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .med-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .med-card h2 {
+    font-size: 1.3rem;
+    color: #2a3d66;
+    margin-bottom: 10px;
+  }
+  
+  .med-card p {
+    font-size: 1rem;
+    color: #4a4a4a;
+    margin: 5px 0;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .prescribe-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .prescribe-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .medication-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .medication-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .search-input {
+      width: 90%;
+    }
+  }
+  .prescription-popup {
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    background: #fff;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+  .prescription-popup input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+  }
+  .prescription-popup button {
+    margin: 5px;
+    padding: 8px 12px;
+  }
+
+  /*------------------------------------------------------*/
+  /* تخصيص صندوق ملخص الأدوية مع الشريط التمرير */
+/* Blue Sidebar Styling */
+.blue-sidebar {
+  background-color: #003366;
+  color: white;
+}
+
+.blue-sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.blue-sidebar a:hover {
+  color: #add8e6;
+}
+
+/* Add Patient Form */
+.add-patient-form {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.add-patient-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.add-patient-form button {
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.add-patient-form button:hover {
+  background-color: #004c99;
+}
+
+
+.horizontal-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.medication-horizontal-card {
+  display: flex;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-horizontal-body {
+  display: flex;
+  width: 100%;
+}
+
+.horizontal-card-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.horizontal-card-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.horizontal-card-info h5 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #2a3d66;
+}
+
+
+
+.summary-panel {
+  position: fixed;
+  top: 100px;
+  right: 30px;
+  width: 280px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  border-radius: 12px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.summary-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2a3d66;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.prescription-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 15px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.prescribed-item {
+  background-color: #f4f8fb;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  color: #e53935;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.email-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn.blue {
+  background-color: #007bff;
+}
+
+.btn.blue:hover {
+  background-color: #0056b3;
+}
+
+.btn.gray {
+  background-color: #6c757d;
+}
+
+.btn.gray:hover {
+  background-color: #545b62;
+}
+
+.btn.green {
+  background-color: #28a745;
+}
+
+.btn.green:hover {
+  background-color: #218838;
+}
+/*---------------------------------*/
+
+.pation-list-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #005b96;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-links li {
+  margin: 15px 0;
+}
+
+.sidebar-links a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.sidebar-links a:hover {
+  color: #ffcc00;
+}
+
+.pation-list-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.list-title {
+  font-size: 28px;
+  color: #005b96;
+  margin-bottom: 20px;
+}
+
+.patient-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.patient-table th, .patient-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.patient-table th {
+  background-color: #005b96;
+  color: white;
+  font-weight: bold;
+}
+
+.patient-table tr:hover {
+  background-color: #f1f9ff;
+}
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.footer a {
+  color: #005b96;
+  font-size: 20px;
+}
+
+.footer a:hover {
+  color: #ffcc00;
+}
