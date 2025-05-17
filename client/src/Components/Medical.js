@@ -18,11 +18,7 @@ const Medical= () => {
     const navigate = useNavigate();
   
   
-    useEffect(() => {
-      if (!email) {
-        navigate("/login");
-      }
-    }, [email]);
+    
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
