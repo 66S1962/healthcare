@@ -1,7 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
-import bcryptis from "bcryptis";
+import bcryptjs from "bcryptjs";
 
 // Import models
 import UserModel from "./Models/Users.js";
@@ -32,7 +32,7 @@ app.post("/registerPatient", async (req, res) => {
       return res.status(400).json({ error: "Email is already registered" });
     }
 
-    const hashedPassword = await bcryptis.hash(password, 10);
+    const hashedPassword = await bcryptjs.hash(password, 10);
 
     const user = new UserModel({
       name,
